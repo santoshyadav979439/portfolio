@@ -45,6 +45,7 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
+  //
   return (
     <section id="projects" className="py-16">
       <div className="container mx-auto px-4">
