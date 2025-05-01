@@ -37,7 +37,8 @@ export default function HeroSection() {
             <p className="text-lg mb-8 max-w-2xl">
               Building robust web applications with modern technologies. I
               specialize in creating seamless user experiences with React,
-              Node.js, and cloud technologies.
+              Node.js, and cloud technologies, backed by strong problem-solving
+              skills and a deep understanding of scalable system design.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">

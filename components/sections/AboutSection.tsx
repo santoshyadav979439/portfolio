@@ -11,7 +11,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <p className="text-lg mb-6">
-              I'm a Full Stack Engineer with over 8 years of experience in
+              I'm a Full Stack Engineer with over 9 years of experience in
               designing, developing, and implementing complex web applications.
               My journey in technology began at TCS and has led me through
               remarkable opportunities at Nagarro, Ferns AND Petals, PayPal, and

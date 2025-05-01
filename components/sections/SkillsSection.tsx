@@ -6,13 +6,13 @@ const skillCategories = [
   {
     name: "Frontend",
     skills: [
-      { name: "React.js", level: 95 },
+      { name: "React.js", level: 96 },
       { name: "Angular", level: 90 },
       { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 90 },
-      { name: "JavaScript", level: 95 },
-      { name: "HTML/CSS", level: 90 },
-      { name: "Redux", level: 85 },
+      { name: "TypeScript", level: 95 },
+      { name: "JavaScript", level: 96 },
+      { name: "HTML/CSS", level: 95 },
+      { name: "Redux", level: 90 },
     ],
   },
   {
@@ -21,7 +21,7 @@ const skillCategories = [
       { name: "Node.js", level: 85 },
       { name: "Express", level: 80 },
       { name: "RESTful APIs", level: 90 },
-      { name: "GraphQL", level: 75 },
+      { name: "GraphQL", level: 90 },
       { name: "Java", level: 70 },
       { name: "Spring Boot", level: 65 },
       { name: "MongoDB", level: 75 },
@@ -36,7 +36,7 @@ const skillCategories = [
       { name: "CI/CD", level: 80 },
       { name: "Jest", level: 85 },
       { name: "Webpack", level: 75 },
-      { name: "Agile/Scrum", level: 85 },
+      { name: "Agile/Scrum", level: 95 },
     ],
   },
 ];
@@ -65,7 +65,7 @@ export default function SkillsSection() {
                           {skill.level}%
                         </span>
                       </div>
-                      <Progress value={60} className="h-2" />
+                      <Progress value={skill.level} className="h-2" />
                     </div>
                   ))}
                 </div>
