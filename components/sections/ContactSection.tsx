@@ -84,10 +84,10 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
                   <a
-                    href="mailto:santoshyadav979439@gmail.com"
+                    href="mailto:tl.santosh.yadav@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    santoshyadav979439@gmail.com
+                    tl.santosh.yadav@gmail.com
                   </a>
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function ContactSection() {
                     href="tel:+1234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (234) 567-890
+                    +91 9532272648
                   </a>
                 </div>
               </div>
@@ -113,9 +113,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-muted-foreground">
-                    San Francisco, California
-                  </p>
+                  <p className="text-muted-foreground">Hyderabad, India</p>
                 </div>
               </div>
             </div>
@@ -141,7 +139,7 @@ export default function ContactSection() {
                 >
                   <Github className="h-5 w-5" />
                 </a>
-                <a
+                {/*     <a
                   href="https://twitter.com/santoshyadav979439"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -149,7 +147,7 @@ export default function ContactSection() {
                   aria-label="Twitter"
                 >
                   <Twitter className="h-5 w-5" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
