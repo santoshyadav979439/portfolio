@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, FileText } from "lucide-react";
+import { Github, Linkedin, FileText, Newspaper } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -37,6 +37,16 @@ export default function Footer() {
                 >
                   <Linkedin size={20} />
                 </a>
+                <a
+                  href="https://medium.com/@santoshyadav979439"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label="Medium"
+                >
+                  <Newspaper size={20} />
+                </a>
+
                 {/*     <a 
                   href="https://twitter.com/santoshyadav979439" 
                   target="_blank" 
@@ -46,7 +56,7 @@ export default function Footer() {
                 >
                   <Twitter size={20} />
                 </a> */}
-                <a
+                {/*   <a
                   href="/Santosh_Yadav_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -54,7 +64,7 @@ export default function Footer() {
                   aria-label="Resume"
                 >
                   <FileText size={20} />
-                </a>
+                </a> */}
               </div>
             </div>
 

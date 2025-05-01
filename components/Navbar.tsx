@@ -1,17 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { MoonIcon, SunIcon, MenuIcon, XIcon } from 'lucide-react';
-import { useTheme } from 'next-themes';
-import { Button } from '@/components/ui/button';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { MoonIcon, SunIcon, MenuIcon, XIcon } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  /*   { label: 'Projects', href: '#projects' }, */
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -23,29 +23,36 @@ export default function Navbar() {
   // After mounting, we can access the theme
   useEffect(() => {
     setMounted(true);
-    
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-background/95 backdrop-blur-md shadow-md' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold font-serif tracking-tight">
+          <Link
+            href="/"
+            className="text-2xl font-bold font-serif tracking-tight"
+          >
             Santosh<span className="text-primary">.</span>
           </Link>
 
@@ -64,10 +71,10 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            
-            <Button 
-              variant="outline" 
-              size="icon" 
+
+            <Button
+              variant="outline"
+              size="icon"
               onClick={toggleTheme}
               aria-label="Toggle theme"
             >
@@ -77,9 +84,13 @@ export default function Navbar() {
                 <MoonIcon className="h-5 w-5" />
               )}
             </Button>
-            
+
             <Button asChild>
-              <a href="/Santosh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a
+                href="/Santosh_Yadav_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Resume
               </a>
             </Button>
@@ -87,9 +98,9 @@ export default function Navbar() {
 
           {/* Mobile Nav Toggle */}
           <div className="flex md:hidden items-center space-x-4">
-            <Button 
-              variant="outline" 
-              size="icon" 
+            <Button
+              variant="outline"
+              size="icon"
               onClick={toggleTheme}
               aria-label="Toggle theme"
             >
@@ -99,7 +110,7 @@ export default function Navbar() {
                 <MoonIcon className="h-5 w-5" />
               )}
             </Button>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -134,7 +145,11 @@ export default function Navbar() {
               ))}
               <li>
                 <Button asChild className="w-full mt-2">
-                  <a href="/Santosh_Yadav_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/Santosh_Yadav_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Resume
                   </a>
                 </Button>

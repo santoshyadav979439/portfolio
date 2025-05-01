@@ -9,6 +9,7 @@ import {
   Linkedin,
   Github,
   Twitter,
+  Newspaper,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -87,7 +88,7 @@ export default function ContactSection() {
                     href="mailto:tl.santosh.yadav@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    tl.santosh.yadav@gmail.com
+                    ysantoshdev@gmail.com
                   </a>
                 </div>
               </div>
@@ -139,6 +140,16 @@ export default function ContactSection() {
                 >
                   <Github className="h-5 w-5" />
                 </a>
+                <a
+                  href="https://medium.com/@santoshyadav979439"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-secondary p-3 rounded-lg text-secondary-foreground hover:text-primary transition-colors"
+                  aria-label="Medium"
+                >
+                  <Newspaper className="h-5 w-5" />
+                </a>
+
                 {/*     <a
                   href="https://twitter.com/santoshyadav979439"
                   target="_blank"
