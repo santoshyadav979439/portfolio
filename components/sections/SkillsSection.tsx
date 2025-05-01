@@ -1,44 +1,44 @@
-import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
 
 const skillCategories = [
   {
-    name: 'Frontend',
+    name: "Frontend",
     skills: [
-      { name: 'React.js', level: 95 },
-      { name: 'Angular', level: 90 },
-      { name: 'Next.js', level: 85 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'JavaScript', level: 95 },
-      { name: 'HTML/CSS', level: 90 },
-      { name: 'Redux', level: 85 },
-    ]
+      { name: "React.js", level: 95 },
+      { name: "Angular", level: 90 },
+      { name: "Next.js", level: 85 },
+      { name: "TypeScript", level: 90 },
+      { name: "JavaScript", level: 95 },
+      { name: "HTML/CSS", level: 90 },
+      { name: "Redux", level: 85 },
+    ],
   },
   {
-    name: 'Backend',
+    name: "Backend",
     skills: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Express', level: 80 },
-      { name: 'RESTful APIs', level: 90 },
-      { name: 'GraphQL', level: 75 },
-      { name: 'Java', level: 70 },
-      { name: 'Spring Boot', level: 65 },
-      { name: 'MongoDB', level: 75 },
-    ]
+      { name: "Node.js", level: 85 },
+      { name: "Express", level: 80 },
+      { name: "RESTful APIs", level: 90 },
+      { name: "GraphQL", level: 75 },
+      { name: "Java", level: 70 },
+      { name: "Spring Boot", level: 65 },
+      { name: "MongoDB", level: 75 },
+    ],
   },
   {
-    name: 'DevOps & Tools',
+    name: "DevOps & Tools",
     skills: [
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 70 },
-      { name: 'AWS', level: 75 },
-      { name: 'CI/CD', level: 80 },
-      { name: 'Jest', level: 85 },
-      { name: 'Webpack', level: 75 },
-      { name: 'Agile/Scrum', level: 85 },
-    ]
-  }
+      { name: "Git", level: 90 },
+      { name: "Docker", level: 70 },
+      { name: "AWS", level: 75 },
+      { name: "CI/CD", level: 80 },
+      { name: "Jest", level: 85 },
+      { name: "Webpack", level: 75 },
+      { name: "Agile/Scrum", level: 85 },
+    ],
+  },
 ];
 
 export default function SkillsSection() {
@@ -46,7 +46,7 @@ export default function SkillsSection() {
     <section id="skills" className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="section-heading">Skills & Expertise</h2>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, idx) => (
             <Card key={idx} className="overflow-hidden">
@@ -61,9 +61,11 @@ export default function SkillsSection() {
                     <div key={skillIdx}>
                       <div className="flex justify-between mb-2">
                         <span className="font-medium">{skill.name}</span>
-                        <span className="text-muted-foreground">{skill.level}%</span>
+                        <span className="text-muted-foreground">
+                          {skill.level}%
+                        </span>
                       </div>
-                      <Progress value={skill.level} className="h-2" />
+                      <Progress value={60} className="h-2" />
                     </div>
                   ))}
                 </div>
@@ -71,17 +73,34 @@ export default function SkillsSection() {
             </Card>
           ))}
         </div>
-        
+
         <div className="mt-16">
           <h3 className="text-2xl font-bold text-center mb-8">Other Skills</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              'Responsive Design', 'Performance Optimization', 'Accessibility (a11y)', 
-              'SEO', 'UI/UX Principles', 'Microservices', 'System Design',
-              'Code Reviews', 'Technical Documentation', 'Team Leadership',
-              'Mentoring', 'Problem Solving', 'PostgreSQL', 'MySQL',
-              'Redis', 'Firebase', 'OAuth', 'JWT', 'SCSS/SASS',
-              'Tailwind CSS', 'Material UI', 'Bootstrap', 'Styled Components'
+              "Responsive Design",
+              "Performance Optimization",
+              "Accessibility (a11y)",
+              "SEO",
+              "UI/UX Principles",
+              "Microservices",
+              "System Design",
+              "Code Reviews",
+              "Technical Documentation",
+              "Team Leadership",
+              "Mentoring",
+              "Problem Solving",
+              "PostgreSQL",
+              "MySQL",
+              "Redis",
+              "Firebase",
+              "OAuth",
+              "JWT",
+              "SCSS/SASS",
+              "Tailwind CSS",
+              "Material UI",
+              "Bootstrap",
+              "Styled Components",
             ].map((skill, idx) => (
               <span
                 key={idx}
